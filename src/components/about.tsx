@@ -26,7 +26,7 @@ export default function About() {
             transition={{ delay: 0.175 }}>
             <SectionHeading children={"About Me"} />
             <div className="max-w-[45rem] leading-8">
-                <p className="mb-6 md:text-[18px]">
+                <p className="mb-6 text-[15px] md:text-[17px]">
                     Welcome to my personal website! I'm currently a Year 2 student, studying {" "}
                     <span className="font-medium">Business Analytics</span> with a second major in {" "}
                     <span className="font-medium">Statistics</span> at the National University of Singapore.
@@ -35,7 +35,7 @@ export default function About() {
                     <span className="font-medium">Web Development</span>. It's so fun to be able to create something from scratch and see it come to life! {" "}
                 </p>
 
-                <p className="md:text-[18px]">
+                <p className="text-[15px] md:text-[17px]">
                     <span className="italic">When I'm not coding</span>, I enjoy
                     watching movies and going on a food adventure. My dream is to {" "}
                     <span className="font-medium">travel the world</span> and taste all the different cuisines.

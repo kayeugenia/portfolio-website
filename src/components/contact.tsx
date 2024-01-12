@@ -23,9 +23,11 @@ export default function Contact() {
     return (
         <section id="contact" ref={ref} className="mt-8 mb-3">
             <SectionHeading children={"Let's get in touch!"} />
-            <div className="flex justify-center -translate-x-6 md:translate-x-2">
-                <img src="/images/waving.gif" alt="Hello!" className="h-[10rem] sm:h-[12rem] pr-5"/>
-                <div className="contact-container flex items-center pl-5">
+            <div className="flex justify-center flex-col sm:flex-row sm:-translate-x-6 md:translate-x-2">
+                <div className="flex justify-center">
+                    <img src="/images/waving.gif" alt="Hello!" className="h-[10rem] sm:h-[12rem] pr-5"/>
+                </div>
+                <div className="contact-container flex items-center justify-center sm:justify-start pl-5">
                     <motion.div className="logos-container"
                         variants={{
                             hidden: { opacity: 0, x: 75 },
