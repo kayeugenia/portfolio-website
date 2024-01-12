@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react'
 import { techStackData } from '@/lib/data';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-export default function footer() {
+export default function Footer() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true});
     const mainControls = useAnimation();
