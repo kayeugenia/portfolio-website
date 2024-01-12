@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={`${inter.className} text-gray-950 relative pt-28 sm:pt-30`}>
-        <div className="bg-orange-50 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[65rem]"></div>
-        <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-        </ActiveSectionContextProvider>
-      </body>
-    </html>
-  )
+    return (
+        <html lang="en">
+        <body className={`${inter.className} text-gray-950 relative pt-28 sm:pt-30 max-w-fit mx-auto`}>
+            <div className="bg-orange-50 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[65rem]"></div>
+            <ActiveSectionContextProvider>
+                <Header />
+                {children}
+                <Footer />
+            </ActiveSectionContextProvider>
+        </body>
+        </html>
+    )
 }
