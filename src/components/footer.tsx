@@ -25,7 +25,7 @@ export default function Footer() {
             animate={mainControls}
             transition={{duration: 0.5, delay: 0.25}}>
             <p className="text-gray-600/80 text-sm md:text-[16px]">This website is built with</p>
-            <div className="techstack-container mt-2 flex justify-center">
+            <div className="techstack-container mt-2 flex justify-center mx-auto">
             {techStackData.map((techStack, index) => (
                 <TechStack {...techStack} key={index} />
             ))}
